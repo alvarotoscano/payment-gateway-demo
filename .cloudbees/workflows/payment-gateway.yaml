@@ -1,0 +1,12 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: payment-gateway
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  corporate-standard:
+    uses: https://github.com/alvarotoscano/cloudbees-engineering-standards//.cloudbees/workflows/nodejs-standard.yaml
