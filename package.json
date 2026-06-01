@@ -5,6 +5,5 @@
     "test": "node test.js"
   },
   "dependencies": {
-    "lodash": "4.17.11"
   }
 }
