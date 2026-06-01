@@ -10,3 +10,7 @@ on:
 jobs:
   corporate-standard:
     uses: https://github.com/alvarotoscano/cloudbees-engineering-standards//.cloudbees/workflows/nodejs-standard.yaml
+    with:
+        application-name: payment-gateway
+        version: "1.0.0"
+        target-environment: STAGING
